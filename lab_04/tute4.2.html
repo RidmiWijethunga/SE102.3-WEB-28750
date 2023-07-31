@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  
+<body>
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 20;
+      background-color: #f8f8f8;
+    }
+.form-container {
+      width: 400px;
+      padding: 20px;
+      background-color: #fff;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+   h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000;
+    }
+ label {
+text-align: center;
+      font-weight: bold;
+      display: inline-flex;
+      margin-top: 5px;
+    }
+  input[type="text"], input[type="email"], textarea {
+      width: 60%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+input[type="radio"] {
+      margin-top: 5px;
+    }
+ .radio-label {
+      margin-right: 5px;
+      color: #000;
+    }
+ .additional-details {
+      width: 56%;
+      resize: vertical;
+    }
+ .terms-conditions {
+      margin-top: 15px;
+    }
+   .form-buttons {
+      text-align: rightr;
+      margin-top: 10px;
+      
+
+    }
+</style>
+</head>
+  <div class="form-container">
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+      <label for="firstName"> First Name: </label>
+      <input type="text" id="firstName" name="firstName" required><br>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required> <br>
+
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="text" id="mobileNumber" name="mobileNumber" required><br>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label class="radio-label" for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label class="radio-label" for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" required>
+      <label class="radio-label" for="other">Other</label><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label>Favorite Music:</label>
+      <input type="checkbox" id="pop" name="favoriteMusic" value="pop" checked>
+      <label class="radio-label" for="pop">Pop</label>
+      <input type="checkbox" id="rock" name="favoriteMusic" value="rock">
+      <label class="radio-label" for="rock">Rock</label>
+      <input type="checkbox" id="otherMusic" name="favoriteMusic" value="otherMusic">
+      <label class="radio-label" for="otherMusic">Other</label> <br>
+
+      <label for="additionalDetails">Additional Details:</label>
+      <textarea id="additionalDetails" name="additionalDetails" class="additional-details"></textarea> <br>
+
+      <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+      <label class="terms-conditions" for="termsAndConditions">I Agree to All the Terms and Conditions</label><br>
+
+      <div class="form-buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

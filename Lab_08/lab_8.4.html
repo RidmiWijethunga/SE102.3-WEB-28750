@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+  <script>
+    
+    function calculateCircleArea(radius) {
+      const pi = 22 / 7;
+      const area = pi* radius * radius;
+      return area;
+    }
+
+    // Get the radius from the user using a prompt box
+    const radiusInput = prompt("Enter the radius of the circle:");
+    
+    // Parse the input string to a floating-point number
+    const radius = parseFloat(radiusInput);
+    
+    
+      // Calculate the area and display the result
+      const area = calculateCircleArea(radius);
+      alert(`The area of the circle with radius ${radius} is: ${area.toFixed(2)}`);
+    
+  </script>
+</body>
+</html>
